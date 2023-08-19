@@ -1,0 +1,23 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Occupation</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let character of collection">
+       
+        <td>{{character.name}}</td>
+        <td>{{character.occupation}}</td>
+        <td>{{character.gender}}</td>
+        <td>{{character.age}}</td>
+        <td><a routerLink="/update/{{character._id}}"><i class="fa fa-edit" style="font-size:36px ; color: black;"></i></a></td>
+       
+      </tr>
+    </tbody>
+  </table>
